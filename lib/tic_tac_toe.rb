@@ -149,9 +149,9 @@ def play(board)
   end
   
   if won?(board)
-    "Congratulations! #{winner(board)}"
+    return "Congratulations! #{winner(board)}"
   elsif draw?(board)
-    "Cat's Game!"
+    return "Cat's Game!"
   end
 end
 
