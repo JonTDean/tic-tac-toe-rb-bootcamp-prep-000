@@ -158,8 +158,9 @@ def play(board)
   end
   
   if won?(board)
-    return ("Conratulations! #{winner(board)}")
+    return("Conratulations! #{winner(board)}")
   elsif draw?(board)
+    return("")
 end
 
 
