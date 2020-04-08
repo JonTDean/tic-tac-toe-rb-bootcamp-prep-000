@@ -164,6 +164,23 @@ def play(board)
   end
 end
 
+# Define your WIN_COMBINATIONS constant
+WIN_COMBINATIONS = [
+  # Row Wins
+  [0, 1, 2],  # Top row
+  [3, 4, 5],  # Middle row
+  [6, 7, 8],  # Bottom Row
+
+  # Column Wins
+  [0, 3, 6],  # First Column
+  [1, 4, 7],  # Second Column
+  [2, 5, 8],  # Third Column
+
+  # Diagonal Wins
+  [0, 4, 8],  # Top Left to Bottom Right
+  [2, 4, 6]   # Top Right to Bottom Left
+]
+
 
 
 
