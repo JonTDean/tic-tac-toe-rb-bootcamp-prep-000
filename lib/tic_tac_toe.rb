@@ -142,11 +142,25 @@ def winner(board)
   return nil # If you leave in the do loop above, it forces a false return.
 end
 
+# # Plays game
+# def play(board)
+#   i = 0
+#   board.each do
+#     i += 1
+#     turn(board)
+#   end
+# end
+
 # Plays game
 def play(board)
-  i = 0
-  board.each do
-    i += 1
+  until over?(board)
     turn(board)
   end
+  
+  if won?()
+    puts("Conratulations!")
 end
+
+
+
+
