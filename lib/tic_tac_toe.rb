@@ -64,15 +64,6 @@ def turn_count(board)
   return i
 end
 
-# Plays turn
-def play(board)
-  i = 0
-  board.each do
-    i += 1
-    turn(board)
-  end
-end
-
 # Sets Current Player, X/O
 def current_player(board)
   turn = turn_count(board).even? ? "X" : "O"
@@ -149,6 +140,15 @@ def winner(board)
     end
   end
   return nil # If you leave in the do loop above, it forces a false return.
+end
+
+# Plays turn
+def play(board)
+  i = 0
+  board.each do
+    i += 1
+    turn(board)
+  end
 end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
