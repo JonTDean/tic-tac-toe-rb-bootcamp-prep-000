@@ -1,3 +1,8 @@
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+
+
 # Displays the values of board array
 def display_board(board_current)
   puts " #{board_current[0]} | #{board_current[1]} | #{board_current[2]} "
@@ -171,7 +176,6 @@ WIN_COMBINATIONS = [
   [0, 4, 8],  # Top Left to Bottom Right
   [2, 4, 6]   # Top Right to Bottom Left
 ]
-
 
 
 
